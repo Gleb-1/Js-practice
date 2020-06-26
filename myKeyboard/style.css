@@ -1,0 +1,138 @@
+.container {
+  /* border: 1px solid black; */
+  max-width: 1500px;
+  margin: 100px auto;
+}
+
+input {
+  display: block;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: inherit;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+}
+
+.keyboard {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  justify-content: center;
+  width: 100%;
+  background: #004134;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: bottom 0.4s;
+}
+
+.keyboard--hidden {
+  bottom: -100%;
+}
+
+.keyboard__keys {
+  display: flex;
+  flex-wrap: wrap;
+  width: 964px;
+}
+
+.k-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 50px;
+  width: 6%;
+  border: none;
+  outline: none;
+  margin: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  -webkit-user-select: none;
+}
+
+.caps::after {
+  content: '';
+  bottom: 13px;
+  left: 16px;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+  background: #08ff00;
+}
+
+.keyboard__key--dark {
+  position: fixed;
+  right: 0;
+  font-size: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.keyboard__key--dark:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.active--key {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.keyboard__key--dark img {
+  height: 25px;
+  width: 25px;
+}
+
+.caps img {
+  width: 40%;
+}
+
+.caps {
+  font-size: 0;
+  width: 100px;
+}
+
+.tab {
+  width: 75px;
+}
+
+.shift {
+  display: flex;
+  width: 150px;
+}
+
+.space {
+  width: 497px;
+}
+
+.menu img {
+  width: 40%;
+}
+
+.backSpace img {
+  width: 45%;
+}
+
+.appercase {
+  text-transform: uppercase;
+}
+
+.enter {
+  display: flex;
+  align-content: center;
+  height: 50px;
+  width: 100px;
+  clip-path: polygon(50% 58%, 0 59%, 1 100%, 100% 100%, 100% 0, 50% 1%);
+}
+
+/* -webkit-clip-path: polygon(50% 58%, 0 59%, 0 100%, 100% 100%, 100% 0, 50% 1%);
+clip-path: polygon(50% 58%, 0 59%, 0 100%, 100% 100%, 100% 0, 50% 1%); */
